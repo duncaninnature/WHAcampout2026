@@ -18,9 +18,7 @@
       --max-width: 900px;
     }
 
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
     body {
       margin: 0;
@@ -48,12 +46,29 @@
     .hero h1 {
       margin: 0 0 8px;
       font-size: 2rem;
-      letter-spacing: 0.2px;
     }
 
     .hero p {
       margin: 0;
       color: rgba(255, 255, 255, 0.92);
+    }
+
+    .notice {
+      margin-top: 12px;
+      padding: 12px 14px;
+      background: rgba(255,255,255,0.18);
+      border-radius: 10px;
+      font-size: 0.95rem;
+    }
+
+    .status-pill {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.14);
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      font-weight: bold;
     }
 
     .grid {
@@ -77,264 +92,132 @@
 
     .card h2 {
       margin-top: 0;
-      font-size: 1.15rem;
       color: var(--accent);
     }
 
     .info-list {
-      display: grid;
-      gap: 10px;
-      margin: 0;
-      padding: 0;
       list-style: none;
+      padding: 0;
     }
 
     .info-list li {
-      padding: 10px 12px;
-      background: var(--accent-light);
-      border-radius: 10px;
-    }
-
-    .label {
-      font-weight: bold;
-      display: inline-block;
-      min-width: 110px;
+      margin-bottom: 8px;
     }
 
     .note {
       color: var(--muted);
-      font-size: 0.96rem;
-    }
-
-    .directions {
-      margin-top: 10px;
-      padding: 12px;
-      background: #f7faf6;
-      border-left: 4px solid var(--accent);
-      border-radius: 8px;
-    }
-
-    details {
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      background: #fbfcfa;
-      padding: 14px 16px;
-    }
-
-    summary {
-      cursor: pointer;
-      font-weight: bold;
-      color: var(--accent);
-      outline: none;
-    }
-
-    .rules {
-      margin-top: 14px;
-      padding-left: 18px;
-    }
-
-    .rules li {
-      margin-bottom: 8px;
-    }
-
-    .status-pill {
-      display: inline-block;
-      margin-top: 12px;
-      padding: 8px 12px;
-      border-radius: 999px;
-      background: rgba(255, 255, 255, 0.14);
-      border: 1px solid rgba(255, 255, 255, 0.22);
-      font-weight: bold;
       font-size: 0.95rem;
-    }
-
-    .table-wrap {
-      overflow-x: auto;
-      margin-top: 10px;
     }
 
     table {
       width: 100%;
       border-collapse: collapse;
-      min-width: 560px;
     }
 
     th, td {
-      text-align: left;
-      padding: 12px 10px;
+      padding: 10px;
       border-bottom: 1px solid var(--border);
-      vertical-align: top;
     }
 
     th {
+      text-align: left;
       color: var(--accent);
-      font-size: 0.95rem;
-      background: #f7faf6;
-    }
-
-    tr:last-child td {
-      border-bottom: none;
     }
 
     .empty {
-      color: #90a090;
+      color: #9aa59a;
     }
 
     .footer {
-      margin-top: 26px;
-      color: var(--muted);
-      font-size: 0.92rem;
       text-align: center;
-    }
-
-    a {
-      color: var(--accent);
+      margin-top: 30px;
+      color: var(--muted);
+      font-size: 0.9rem;
     }
   </style>
 </head>
+
 <body>
   <div class="wrap">
+
     <section class="hero">
       <h1>WHA Summer Campout 2026</h1>
       <p>Group camping weekend at Sanborn County Park</p>
+
+      <div class="notice">
+        <strong>Note:</strong> This is an informational page only — registration is handled directly and not through this site.
+      </div>
+
       <div class="status-pill">Slots reserved: 1 / 35</div>
     </section>
 
     <div class="grid two">
+
       <section class="card">
         <h2>Main Info</h2>
         <ul class="info-list">
-          <li><span class="label">Dates:</span> June 12–14, 2026</li>
-          <li><span class="label">Check-in:</span> 3:00 PM Friday</li>
-          <li><span class="label">Check-out:</span> 1:00 PM Sunday</li>
-          <li><span class="label">Registration:</span> $60</li>
+          <li><strong>Dates:</strong> June 12–14, 2026</li>
+          <li><strong>Check-in:</strong> 3:00 PM Friday</li>
+          <li><strong>Check-out:</strong> 1:00 PM Sunday</li>
+          <li><strong>Registration:</strong> $60</li>
         </ul>
-        <p class="note" style="margin-top: 14px;">
-          Registration includes the group site fee and food for the weekend.
-          A spot is considered reserved once payment has been received.
-        </p>
+
         <p class="note">
-          Please bring a tent, sleeping bag, snacks, and other essentials for camping in the woods over the weekend.
-          If you do not have certain essential supplies, please let Duncan know by May 4th and he will help source.
+          Registration includes the group site fee and food for the weekend. A spot is reserved once payment is received.
+        </p>
+
+        <p class="note">
+          Bring a tent, sleeping bag, snacks, and essentials. If you need gear, reach out by May 4th.
         </p>
       </section>
 
       <section class="card">
-        <h2>Site / Area Details</h2>
+        <h2>Site Details</h2>
         <p>
-          This is a hike-in group campsite. The paved path leading to the site is about
-          half a mile long and mostly uphill. Wheelbarrow carts will be available for
-          shuttling supplies to and from the site.
+          This is a hike-in campsite (~0.5 mile uphill). Wheelbarrow carts will be available.
         </p>
         <p>
-          Parking for 6 vehicles in the overflow lot is included with the reservation.
-          Larger vehicles will be given parking pass priority for the sake of efficiency
-          with carpooling and materials transport.
+          Parking for 6 vehicles is included. Larger vehicles prioritized for hauling.
         </p>
-        <div class="directions">
-          <strong>Directions:</strong> Sanborn County Park is located on Sanborn Road.
-          From downtown Saratoga, proceed two miles west on Highway 9 to Sanborn Road.
-          Turn left onto Sanborn Road and travel one mile to the park entrance.
-        </div>
+        <p class="note">
+          Sanborn County Park — from Saratoga, take Hwy 9 → Sanborn Rd → 1 mile to entrance.
+        </p>
       </section>
+
     </div>
 
-    <section class="card" style="margin-top: 18px;">
-      <h2>Campground Rules & Agreement</h2>
-      <details>
-        <summary>View regulations</summary>
-        <ul class="rules">
-          <li>Quiet hours are from 10:00 PM to 7:00 AM.</li>
-          <li>Radios, instruments, and other loud noise are not permitted during quiet hours.</li>
-          <li>Shower facilities are available at each camping park.</li>
-          <li>Showers are on timers and are only for those with a camping reservation.</li>
-          <li>Dogs and pets are allowed in all campgrounds.</li>
-          <li>Pets must be on a leash no longer than 6 feet and under the owner's control at all times.</li>
-          <li>Pets must be confined to tents or vehicles at night.</li>
-          <li>Maximum of 2 pets per site.</li>
-          <li>No wood gathering is permitted.</li>
-          <li>No fires are permitted on the ground.</li>
-          <li>Charcoal is permitted in grills, BBQ pits, and fire rings.</li>
-          <li>Wood fires are not permitted in the large BBQ grills at reserved sites.</li>
-          <li>Fires in BBQ pits must be kept beneath the grate.</li>
-          <li>Please allow fires in grills, BBQ pits, and fire rings to burn out naturally.</li>
-          <li>Open fires and charcoal use may be restricted during high fire danger periods.</li>
-          <li>Camp stoves and similar devices with a controlled enclosed flame are allowed.</li>
-          <li>General setup and cleanup are the responsibility of the group.</li>
-          <li>Buildings and grounds must be left free of debris and other refuse.</li>
-          <li>Clean fire rings and empty refuse and glass.</li>
-          <li>All decorations and equipment must be removed from the site.</li>
-          <li>Additional cleanup may be charged at the special staffing fee rate.</li>
-          <li>Future reservations may be denied until past fees are paid.</li>
-          <li>Glitter and confetti are not allowed.</li>
-          <li>Staples are not permitted on picnic tables, wood structures, or trees.</li>
-          <li>Hammocks must be free-standing.</li>
-          <li>Swimming is prohibited in all County parks.</li>
-          <li>Smoking is prohibited in all County parks.</li>
-        </ul>
-      </details>
-    </section>
-
-    <section class="card" style="margin-top: 18px;">
+    <section class="card">
       <h2>Confirmed Registrations</h2>
-      <p class="note">
-        Names will be added here after payment is received.
-      </p>
+      <p class="note">Names added after payment is received.</p>
 
-      <div class="table-wrap">
-        <table>
-          <thead>
-            <tr>
-              <th>#</th>
-              <th>Name</th>
-              <th>Can Drive?</th>
-              <th>Extra Supplies?</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr><td>1</td><td>Duncan K.</td><td>Yes</td><td>Pots and pans</td></tr>
-            <tr><td>2</td><td class="empty">—</td><td></td><td></td></tr>
-            <tr><td>3</td><td class="empty">—</td><td></td><td></td></tr>
-            <tr><td>4</td><td class="empty">—</td><td></td><td></td></tr>
-            <tr><td>5</td><td class="empty">—</td><td></td><td></td></tr>
-            <tr><td>6</td><td class="empty">—</td><td></td><td></td></tr>
-            <tr><td>7</td><td class="empty">—</td><td></td><td></td></tr>
-            <tr><td>8</td><td class="empty">—</td><td></td><td></td></tr>
-            <tr><td>9</td><td class="empty">—</td><td></td><td></td></tr>
-            <tr><td>10</td><td class="empty">—</td><td></td><td></td></tr>
-            <tr><td>11</td><td class="empty">—</td><td></td><td></td></tr>
-            <tr><td>12</td><td class="empty">—</td><td></td><td></td></tr>
-            <tr><td>13</td><td class="empty">—</td><td></td><td></td></tr>
-            <tr><td>14</td><td class="empty">—</td><td></td><td></td></tr>
-            <tr><td>15</td><td class="empty">—</td><td></td><td></td></tr>
-            <tr><td>16</td><td class="empty">—</td><td></td><td></td></tr>
-            <tr><td>17</td><td class="empty">—</td><td></td><td></td></tr>
-            <tr><td>18</td><td class="empty">—</td><td></td><td></td></tr>
-            <tr><td>19</td><td class="empty">—</td><td></td><td></td></tr>
-            <tr><td>20</td><td class="empty">—</td><td></td><td></td></tr>
-            <tr><td>21</td><td class="empty">—</td><td></td><td></td></tr>
-            <tr><td>22</td><td class="empty">—</td><td></td><td></td></tr>
-            <tr><td>23</td><td class="empty">—</td><td></td><td></td></tr>
-            <tr><td>24</td><td class="empty">—</td><td></td><td></td></tr>
-            <tr><td>25</td><td class="empty">—</td><td></td><td></td></tr>
-            <tr><td>26</td><td class="empty">—</td><td></td><td></td></tr>
-            <tr><td>27</td><td class="empty">—</td><td></td><td></td></tr>
-            <tr><td>28</td><td class="empty">—</td><td></td><td></td></tr>
-            <tr><td>29</td><td class="empty">—</td><td></td><td></td></tr>
-            <tr><td>30</td><td class="empty">—</td><td></td><td></td></tr>
-            <tr><td>31</td><td class="empty">—</td><td></td><td></td></tr>
-            <tr><td>32</td><td class="empty">—</td><td></td><td></td></tr>
-            <tr><td>33</td><td class="empty">—</td><td></td><td></td></tr>
-            <tr><td>34</td><td class="empty">—</td><td></td><td></td></tr>
-            <tr><td>35</td><td class="empty">—</td><td></td><td></td></tr>
-          </tbody>
-        </table>
-      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Can Drive?</th>
+            <th>Extra Supplies</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>Duncan K.</td><td>Yes</td><td>Camping stove</td></tr>
+          <tr><td>2</td><td class="empty">—</td><td></td><td></td></tr>
+          <tr><td>3</td><td class="empty">—</td><td></td><td></td></tr>
+          <tr><td>4</td><td class="empty">—</td><td></td><td></td></tr>
+          <tr><td>5</td><td class="empty">—</td><td></td><td></td></tr>
+          <tr><td>6</td><td class="empty">—</td><td></td><td></td></tr>
+          <tr><td>7</td><td class="empty">—</td><td></td><td></td></tr>
+          <tr><td>8</td><td class="empty">—</td><td></td><td></td></tr>
+          <tr><td>9</td><td class="empty">—</td><td></td><td></td></tr>
+          <tr><td>10</td><td class="empty">—</td><td></td><td></td></tr>
+        </tbody>
+      </table>
     </section>
 
     <div class="footer">
-      Public information page for the WHA Summer Campout 2026.
+      WHA Campout 2026
     </div>
+
   </div>
 </body>
 </html>
